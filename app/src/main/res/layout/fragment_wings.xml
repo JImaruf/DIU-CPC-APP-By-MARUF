@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Fragments.WingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+
+                    android:padding="8dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.card.MaterialCardView
+
+
+                        android:id="@+id/taskcard"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+
+                        android:elevation="8dp"
+                        app:cardCornerRadius="20dp"
+
+
+                        app:layout_constraintBottom_toTopOf="@+id/materialCardView4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/maincolor"
+                        app:strokeWidth="5dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/acmtask"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="24dp"
+                                android:src="@drawable/acmtaskgif"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/maincolor"
+                                android:gravity="center"
+                                android:text="ACM Task Force"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/acmtask" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/developcard"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="20dp"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+                        app:strokeColor="@color/maincolor"
+                        app:strokeWidth="5dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/develop"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="24dp"
+                                android:src="@drawable/development"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/developtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/maincolor"
+                                android:gravity="center"
+                                android:text="Development"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/develop" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+
+
+                        android:id="@+id/researchcard"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="20dp"
+
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/maincolor"
+                        app:strokeWidth="5dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/research"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="24dp"
+                                android:src="@drawable/research"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/researchtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/maincolor"
+                                android:gravity="center"
+
+                                android:text="Research and\nJournal"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/research" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/jobcard"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="20dp"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/materialCardView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:strokeColor="@color/maincolor"
+                        app:strokeWidth="5dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/job"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="24dp"
+                                android:src="@drawable/job"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/jobtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/maincolor"
+                                android:gravity="center"
+                                android:text="Job, Carrier and Industry Collaboration"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/job" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

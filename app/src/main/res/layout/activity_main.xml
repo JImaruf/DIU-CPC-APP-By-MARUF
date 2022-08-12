@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navbarID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:id="@+id/toolbar"
+                android:padding="5dp"
+                >
+
+
+                <ImageView
+
+
+                    android:id="@+id/navmenubtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bx_bx_menu_alt_left" />
+
+                <ImageView
+
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="80dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintStart_toEndOf="@+id/navmenubtn"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    app:srcCompat="@drawable/cpclogo" />
+
+
+
+                <ImageView
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profilesvg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+
+                android:layout_marginEnd="45dp"
+                android:elevation="8dp"
+                app:mt_hint="Enter"
+                app:mt_maxSuggestionsCount="3"
+                app:mt_placeholder="Search for activities"
+                app:mt_roundedSearchBarEnabled="true"
+                app:mt_speechMode="false"
+                app:mt_dividerColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/liner"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fragmentcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/navbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navimage"
+
+            app:menu="@menu/drawernavmenu">
+
+            <!--       <LinearLayout-->
+            <!--               android:layout_width="match_parent"-->
+            <!--               android:layout_height="80dp"-->
+            <!--               android:layout_gravity="bottom"-->
+            <!--               android:orientation="vertical"-->
+            <!--               >-->
+            <!--               <TextView-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:text="About Us"-->
+            <!--                   android:textStyle="italic"-->
+            <!--                   android:layout_marginLeft="20dp"-->
+
+            <!--                   android:textSize="16sp"-->
+            <!--                   android:textColor="@color/black"-->
+            <!--/>-->
+            <!--               <TextView-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:text="For more details"-->
+            <!--                   android:textStyle="italic"-->
+            <!--                   android:layout_marginLeft="20dp"-->
+            <!--                   android:layout_marginTop="10dp"-->
+
+            <!--                   android:textSize="16sp"-->
+            <!--                   android:textColor="@color/black"-->
+            <!--                   />-->
+
+            <!--           </LinearLayout>-->
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbarID"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        app:itemIconSize="32sp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/nav_menu" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

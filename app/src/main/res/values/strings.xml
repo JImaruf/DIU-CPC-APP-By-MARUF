@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DIU CPC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="yearlist"
+        >
+
+        <item> Select Year</item>
+        <item name="2022">TEAM 2022</item>
+        <item name="2021">TEAM 2021</item>
+        <item name="2020">TEAM 2020</item>
+        <item name="2019">TEAM 2019</item>
+        <item name="2018">TEAM 2018</item>
+        <item name="2017">TEAM 2017</item>
+        <item name="2017">TEAM 2016</item>
+        <item name="2017">TEAM 2015</item>
+        <item name="2017">TEAM 2014</item>
+
+
+
+
+        <item name="2030">TEAM 2030</item>
+        <item name="2029">TEAM 2029</item>
+        <item name="2028">TEAM 2028</item>
+        <item name="2027">TEAM 2027</item>
+        <item name="2026">TEAM 2026</item>
+        <item name="2025">TEAM 2025</item>
+        <item name="2024">TEAM 2024</item>
+        <item name="2023">TEAM 2023</item>
+
+
+
+
+
+
+
+
+
+
+    </string-array>
+</resources>

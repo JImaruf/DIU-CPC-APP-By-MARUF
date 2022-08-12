@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/notification"
+        android:iconTint="@color/white"
+        android:title="notification"
+        android:icon="@drawable/notification"
+
+
+        >
+
+
+    </item>
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/team"
+        android:title="Team"
+        android:icon="@drawable/team"
+
+
+        >
+
+
+    </item>
+
+    <item
+        android:iconTint="@color/white"
+
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+
+
+
+        >
+
+
+    </item>
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/feed"
+        android:title="Feed"
+        android:icon="@drawable/feed"
+
+
+        >
+
+
+    </item>
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/wings"
+        android:title="Wings"
+        android:icon="@drawable/wings"
+
+
+        >
+
+
+    </item>
+
+</menu>

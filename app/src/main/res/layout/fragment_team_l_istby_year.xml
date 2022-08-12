@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TeamLIstbyYear">
+
+    <com.cncoderx.wheelview.WheelView
+        android:id="@+id/yearWheel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/teamViewer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:wheelCyclic="true"
+
+
+
+        app:wheelDividerColor="@color/maincolor"
+        app:wheelDividerStrokeWidth="10dp"
+        app:wheelEntries="@array/yearlist"
+        app:wheelHighlightColor="#DDDAD5"
+        app:wheelItemCount="@integer/mtb_to_btm_from"
+        app:wheelItemHeight="70dp"
+        android:background="#4DF3F1EF"
+
+        app:wheelSelectedArcBackgroundColor="@color/teal_200"
+        app:wheelSelectedTextColor="@color/maincolor"
+        app:wheelTextColor="#CC343E45"
+        app:wheelTextSize="22sp" />
+
+    <Button
+        android:id="@+id/teamViewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:text="See The Selected Team"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
